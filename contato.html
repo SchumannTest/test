@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecontato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Website da Empresa XYZ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="produtos.html">Produtos/Serviços</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+
+            <!--Copia e cola essa parte pra todos. Pra sempre aparecer esse cabeçalho, pra conseguir ir de uma pagina para a outra-->
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Formulario de Contato</h2>
+        <form action="enviar_contato.php" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <!-- o input cria botão/caixa de texto/senha/ depende do que você quer. O que vai determinar o tipo de input que vai ser é no type="" vai colocar dentro do type o tipo de input que você quer -->
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <!-- o label é usado para rotular os elementos -->
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar"> <!-- value é o nome que vai aparecer no botão -->
+        </form>
+    </main>
+    
+
+
+</body>
+</html>
