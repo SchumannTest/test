@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(113, 238, 221);
+    margin: auto;
+}
+
+h1{
+    color: black; /*Define a cor do texto*/
+    text-align: center;  /*Centraliza o texto*/
+    font-size: 24px;     /*Define o tamanho da fonte do texto como 24 pixels*/
+    margin-bottom: 20px; /* Adiciona margem na parte inferior para espaçamento*/
+    font-family: 'Times New Roman', Times, serif;  /*Escolhe uma fonte*/
+}
+
+.destaque{
+    background-color: antiquewhite; /*Define a cor do fundo*/
+    font-size: 20px;
+}
+    
+.container{
+    width: 80%; /* Define a largura como 80% da largura do elemento pai */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    background-color: rgb(160, 219, 206);/* Define a cor de fundo como cinza claro */
+    padding: 20px; /* Adiciona preenchimento interno ao redor do conteúdo */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Regra de estilo para a primeira linha do primeiro parágrafo filho do elemento com o ID "container" */
+.container > p:first-of-type::first-line{
+    color: rgb(192, 0, 0);
+    font-weight: bold; /* Define o peso da fonte da primeira linha como negrito */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Claro! Vamos analisar a função .container > p:first-of-type::first-line passo a passo:
+
+.container: Este é um seletor de classe que seleciona todos os elementos com a classe container. Essa classe é geralmente usada para agrupar um conjunto de elementos relacionados dentro de uma seção específica de uma página da web.
+
+>: Este é o seletor filho direto, que significa que estamos selecionando apenas os elementos p que são filhos diretos (não aninhados) dos elementos com a classe container.
+
+p: Este é um seletor de tipo que seleciona todos os elementos <p> (parágrafos) dentro dos elementos com a classe container.
+
+:first-of-type: Esta é uma pseudo-classe que seleciona o primeiro elemento do tipo especificado. Neste caso, estamos selecionando o primeiro parágrafo filho dos elementos com a classe container.
+
+::first-line: Esta é uma pseudo-classe que seleciona a primeira linha de texto dentro de um elemento. Aqui, estamos aplicando estilos à primeira linha do primeiro parágrafo filho dos elementos com a classe container.*/
+
+.destaque + li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+li:nth-of-type(odd){
+    background-color: antiquewhite;
+    color: blue;
+    font-size: 20px;
+}
+
+a:hover {
+    color: rgba(255, 0, 0, 0.733);
+}
+
+ul::before {
+    content: "Lista: "; /* Define o conteúdo do pseudo-elemento como "Lista: " */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
